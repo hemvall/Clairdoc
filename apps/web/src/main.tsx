@@ -7,13 +7,12 @@ function App() {
     <main>
       <p className="eyebrow">CLAIRDOC · BASE DOCUMENTAIRE</p>
       <h1>Vos procédures, enfin faciles à retrouver.</h1>
-      <p className="intro">Posez une question sur les règles commerciales de l’agence. Clairdoc répond à partir des documents autorisés et indique ses sources.</p>
-      <form onSubmit={(event) => event.preventDefault()}>
-        <label htmlFor="question">Votre question</label>
-        <textarea id="question" placeholder="Ex. Quelle remise puis-je proposer sans validation ?" rows={3} />
-        <button type="submit">Rechercher dans les procédures <span aria-hidden="true">→</span></button>
-      </form>
-      <p className="note">Prototype documentaire · Connectez-vous pour accéder à votre espace</p>
+      <p className="intro">Le socle technique de Clairdoc est prêt. L’interface de recherche sera disponible quand la recherche documentaire et l’authentification seront intégrées.</p>
+      <section className="status" aria-labelledby="status-title">
+        <h2 id="status-title">Prototype en préparation</h2>
+        <p>Aucune question n’est envoyée ni réponse générée pour le moment.</p>
+      </section>
+      <p className="note">Espace documentaire interne · Accès réservé aux personnes autorisées</p>
     </main>
   );
 }

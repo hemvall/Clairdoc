@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --env-file=../../.env --import tsx --watch apps/api/src/index.ts",
-    "start": "node --env-file=../../.env apps/api/dist/index.js",
+    "dev": "node --env-file=../../.env --import tsx --watch src/index.ts",
+    "start": "node --env-file=../../.env dist/index.js",
     "typecheck": "tsc --build"
   },
   "dependencies": { "@clairdoc/contracts": "0.1.0" }
