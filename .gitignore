@@ -2,6 +2,7 @@
 dist/
 coverage/
 .cache/
+*.tsbuildinfo
 .env
 .env.*
 !.env.example
