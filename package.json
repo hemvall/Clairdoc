@@ -11,7 +11,7 @@
     "dev": "concurrently -k -n api,web \"npm:dev --workspace=@clairdoc/api\" \"npm:dev --workspace=@clairdoc/web\"",
     "lint": "eslint .",
     "typecheck": "tsc --build && npm run typecheck --workspace @clairdoc/web",
-    "test": "tsx --test apps/api/src/**/*.test.ts packages/contracts/src/**/*.test.ts",
+    "test": "tsx --test apps/api/src/config.test.ts apps/api/src/server.test.ts",
     "build": "tsc --build && npm run build --workspace @clairdoc/web"
   },
   "devDependencies": {

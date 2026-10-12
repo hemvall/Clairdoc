@@ -21,5 +21,8 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): ServerConfig {
   if (!['postgres:', 'postgresql:'].includes(databaseUrl.protocol)) {
     throw new Error('DATABASE_URL must use postgres:// or postgresql://');
   }
+  if (!databaseUrl.hostname || databaseUrl.pathname.length < 2 || databaseUrl.pathname === '/') {
+    throw new Error('DATABASE_URL must include a host and database name');
+  }
   return { port, databaseUrl };
 }
